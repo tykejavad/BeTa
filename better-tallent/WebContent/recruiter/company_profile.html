@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Better Talent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Better Talent" />
+    <meta name="keywords" content="Better Talent" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/circle.css" />
+    <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery.thumbnailScroller.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="../libs/demo-assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .icon {
+            cursor: pointer;
+            padding: 29px 34px;
+            -moz-border-radius: 60px;
+            -webkit-border-radius: 60px;
+            border-radius: 60px;
+            -moz-box-shadow: 0px 0px 2px #888;
+            -webkit-box-shadow: 0px 0px 2px #888;
+            box-shadow: 0px 0px 2px #888;
+            background: #23BA85;
+            color: #ffffff;
+            -webkit-transition-duration: 0.8s;
+            -moz-transition-duration: 0.8s;
+            -o-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+            transition-property: transform;
+            overflow: hidden;
+        }
+
+            .icon:hover {
+                background: #323232;
+                color: #ffffff;
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+            }
+
+            .icon#animate {
+                transition-property: width, border-radius, background-color;
+                transition-duration: 1s, 2s;
+                transition-timing-function: ease;
+            }
+
+        .row {
+            margin-top: 10px;
+        }
+        .row {
+            margin-top: 10px;
+        }
+        .dashboard a {
+        color:#000000;
+        font-size:13px;
+        padding:15px 0px;
+        display:block;
+        }
+        .dashboard a:hover {
+       text-decoration:none;
+       color:#00CC99;
+        }
+        .dashboard i {
+        color:#00BA8B;
+        font-size:18px;
+        }
+    </style>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../libs/demo-assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="../jquery.smartmenus.js"></script>
+    <script type="text/javascript" src="../js/jquery.thumbnailScroller.js"></script>
+
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="../addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="../addons/bootstrap/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link href="../css/menu.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/modernizr.custom.79639.js"></script>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
+    </noscript>
+</head>
+<body>
+
+
+
+    <div class="col-md-12 col-lg-12" id="containerData" style="padding: 0">
+        <!-- Static navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="position: absolute;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.png"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <!-- Right nav -->
+                    <ul class="nav navbar-nav navbar-right">
+                         <!--  <li><a href="bootstrap-navbar.html">Home</a></li>
+              <li><a href="bootstrap-navbar-static-top.html">Jobs</a></li>-->
+              
+             
+              <li><a href="#" style="font-size:14px;">Prasanta Kumar Pradhan</a>
+                <ul class="dropdown-menu">
+                   <li><a href="#">Edit Company Profile</a></li>
+                                    <li><a href="#">Subscription</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                </ul>
+              </li> 
+                        <li ><a href="javascript:void(0)" style="font-size:14px;"><i class="fa fa-comment"></i>&nbsp;&nbsp;<span>My Alerts(5)</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">22-Jun-2015 - You did not answer the queries</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">22-Jun-2015 - You did not answer the queries</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+
+                </ul>
+                        </li>
+                        <!-- <li><a href="bootstrap-navbar-fixed-bottom.html">Contacts</a></li> -->
+                       <!-- <li><a href="bootstrap-navbar-fixed-bottom.html" style="border: 2px solid #23BA85; padding-top: 7px; padding-bottom: 7px">Dashboard</a></li>-->
+                        <li><a href="javacript:void(0)" id="sidemenu" style="font-size: 24px; margin-right: 32px;"><i class="fa fa-align-justify"></i></a></li>
+                    </ul>
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container -->
+        </div>
+        <div style="clear:both"></div>
+        <div class="container demo-2" style="width: 100%; padding: 0">
+
+            <div class="col-md-12 col-lg-12" style="background: url(../images/other_banner.png); background-size: cover; background-repeat: no-repeat; height: 130px">
+            </div>
+            <div class="col-md-12 col-lg-12 menudetails">
+                <div class="col-md-6 col-lg-6 col-lg-offset-2">
+                    <a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#">Dashboard</a>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12" style="margin-top: 20px; margin-bottom: 30px;">
+
+                <div class="col-md-11 col-lg-11 col-lg-offset-1" >
+                            <div class="col-md-2 col-lg-2" >
+                        <ul class="nav nav-pills nav-stacked leftwidget" style=" padding-top:10px;font-size:13px;font-weight:400">
+                            <li><div style="position:absolute;right:15px"><a href="#" style="color:#e1e1e1;cursor:pointer" ><i class="fa fa-pencil"></i></a></div></li>
+                            <li><center><img src="../images/profile.jpg" width="80px"  class="img-circle" style="border:1px solid #e1e1e1" /></center></li>
+                            <li class="active"><a href="#" style="background-color:#323232">Upgrade to Premium</a></li>
+                            <li>
+                                <div class="col-md-10 col-lg-10 col-lg-offset-2" style="margin-bottom:10px;">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-12 col-lg-12" style="padding-left: 0px; padding-right: 1px;">
+                                           Prasanta , Bhubaneswar
+                                        </div>
+                                    </div>
+
+                                   
+
+                                    <!-- <div class="row">
+                                       
+                                      
+                                    </div>-->
+
+                                </div>
+
+                            </li>
+                             
+                        </ul>
+                    </div>
+
+                     <div class="col-md-10 col-lg-10 dashboard" style="padding-left:0px;padding-right:0px;">
+                         <ul class="nav nav-tabs toptabs">
+                             <li class="active"><a href="company_profile.html"><i class="fa fa-user"> </i>&nbsp;&nbsp;My Profile</a></li>
+                             <li><a href="javascript:void(0)"><i class="fa fa-send"> </i>&nbsp;&nbsp;Search Candidates</a></li>
+                             <li><a href="Interview_offers.html"><i class="fa fa-qrcode"> </i>&nbsp;&nbsp;Manage Job Posting</a></li>
+                             <li><a href="#"><i class="fa fa-signal"> </i>&nbsp;&nbsp;My Subscriptions</a></li>
+                             <li><a href="#"><i class="fa fa-share-square-o"> </i>&nbsp;&nbsp;Invite Your Team</a></li>
+                         </ul>
+
+
+                            <ul class="nav nav-tabs subtabs" style="font-family:Tahoma;">
+                             <li class="active"><a href="javascript:void(0)">Company profile</a></li>
+                             <li><a href="Hiring_Specialization.html">Hiring Specialization</a></li>
+                             <li><a href="My_subscription.html">My Subscriptions</a></li>
+                         </ul>
+
+                <div class="row">
+                      <div class="col-md-6 col-lg-6">
+                                 <label for="inputEmail" class="control-label col-xs-4">Company Type</label>
+                                  <div class="col-xs-7">
+                                    <select class="form-control">
+                                            <option>Select</option>
+                                            <option>Hiring Manager</option>
+                                            <option>Recruitment Firm</option>
+                                        </select>
+                                 </div>
+                                 <span class="mandatory">*</span>
+                             </div>
+                             <div class="col-md-6 col-lg-6">
+                                 <label for="inputEmail" class="control-label col-xs-4">Industry Type</label>
+                                 <div class="col-xs-7">
+                                        <select class="form-control">
+                                            <option>Select</option>
+                                        </select>
+                                 </div>
+                                 <span class="mandatory">*</span>
+                             </div>
+                    </div>
+
+                         <div class="row">
+                      <div class="col-md-6 col-lg-6">
+                                 <label for="inputEmail" class="control-label col-xs-4">Contact Person</label>
+                                  <div class="col-xs-7">
+                                    <input class="form-control" type="text" />
+                                 </div>
+                                 <span class="mandatory">*</span>
+                             </div>
+                             <div class="col-md-6 col-lg-6">
+                                 <label for="inputEmail" class="control-label col-xs-4">Contact Person Designation</label>
+                                 <div class="col-xs-7">
+                                        <select class="form-control">
+                                            <option>Select</option>
+                                        </select>
+                                 </div>
+                                 <span class="mandatory">*</span>
+                             </div>
+                    </div>
+
+                         
+                         <div class="row">
+                      <div class="col-md-6 col-lg-6">
+                                 <label for="inputEmail" class="control-label col-xs-4">Website</label>
+                                  <div class="col-xs-7">
+                                    <input class="form-control" type="text" />
+                                 </div>
+                                 <span class="mandatory">*</span>
+                             </div>
+                            
+                    </div>
+                          <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                   <table class="table table-responsive table-bordered">
+                                      <thead class="tableheader">
+                                          <tr>
+                                              <td>Building no</td>
+                                              <td>Street Name</td>
+                                              <td>City</td>
+                                              <td>State</td>
+                                              <td>Country</td>
+                                              <td>Pin Code</td>
+                                              <td>Phone No</td>
+                                              <td>Fax No</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                             <tr>
+                                              <td><input class="form-control" type="text" /></td>
+                                              <td><input class="form-control" type="text" /></td>
+                                              <td style="width:150px"><select class="form-control">
+                                            <option>Select</option>
+                                        </select></td>
+                                                 <td style="width:150px"><select class="form-control">
+                                            <option>Select</option>
+                                        </select></td>
+                                                 <td style="width:150px"><select class="form-control">
+                                            <option>Select</option>
+                                        </select></td>
+                                              <td><input class="form-control" type="text" /></td>
+                                              <td><input class="form-control" type="text" /></td>
+                                              <td><input class="form-control" type="text" /></td>
+                                            </tr>
+
+                                          <tr>
+                                              <td colspan="8" style="text-align:right"><button type="submit" class="btn btn-primary btn-md">Add more</button></td>
+                                            </tr>
+                                      </tbody>
+                                  </table>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                   <table class="table table-responsive table-bordered">
+                                      <thead class="tableheader">
+                                          <tr>
+                                              <td>Building no</td>
+                                              <td>Street Name</td>
+                                              <td>City</td>
+                                              <td>State</td>
+                                              <td>Country</td>
+                                              <td>Pin Code</td>
+                                              <td>Phone No</td>
+                                              <td>Fax No</td>
+                                              <td>Action</td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                             <tr>
+                                              <td>1255</td>
+                                              <td>abc</td>
+                                              <td>abc</td>
+                                                 <td>abc</td>
+                                                 <td>abc</td>
+                                              <td>333</td>
+                                              <td>444</td>
+                                              <td>4444</td>
+                                              <td><button type="submit" class="btn btn-primary btn-xs">Edit</button>&nbsp;&nbsp;<button type="submit" class="btn btn-danger btn-xs">Delete</button></td>
+                                            </tr>
+                                      </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                           <div class="row" style="margin-bottom:70px;margin-top:70px">
+                                        <label for="inputEmail" class="control-label col-xs-5"></label>
+                                        <div class="col-xs-5">
+                                             <button type="submit" class="btn btn-success btn-md">Update</button>&nbsp;&nbsp;
+               
+                            <button type="submit" class="btn btn-danger btn-md">Reset</button>
+                                        </div>
+                                    </div>
+                     </div>
+
+
+                </div>
+
+                <style>
+                    .ace {
+                    padding:7px 10px !important;
+                    border:1px solid #EDEDED ;
+                    font-family:'Segoe UI';
+                    font-weight:400;
+                    font-size:12px !important;
+                    border-radius:3px;
+                    }
+                        .ace i {
+                        color:#0076BA;
+                        }
+                    .jobsrchdetail{
+                       border-bottom:1px solid #e1e1e1;
+                    }
+                    .jobsrchdetail label {
+                    font-size:12px !important;
+                    }
+                     .link {
+                         padding:7px 10px !important;
+                    font-family:'Segoe UI';
+                    font-weight:600;
+                    font-size:13px !important;
+                    border-radius:3px;
+                    color:#0076BA !important;
+                    }
+                </style>
+
+                <div style="clear: both"></div>
+
+            </div>
+
+                <!--<div class="col-md-3 col-lg-3">
+			<div class="panel panel-default">
+			   <div class="panel-heading">Why become a member of Better Talent?</div>
+				<div class="panel-body">
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</div>
+				</div>
+			
+			</div>-->
+            </div>
+
+
+            <div class="row-fluid">
+                <div class="col-md-12 col-lg-12 titlepanel" style="background: #4D4D4D">
+                    <div class="col-md-10 col-lg-10 col-lg-offset-2 footer">
+                        <div class="col-md-3 col-lg-3">
+                            <h4>Know More</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <h4>Checkout here</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-lg-3">
+                            <h4>Get in touch</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2">
+                            <h4>Follow Us</h4>
+                            <a href="#"><i class="fa fa-facebook-square fa-2x">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fa fa-twitter-square fa-2x">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fa fa-linkedin-square fa-2x">&nbsp;&nbsp;</i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <script>
+                jQuery.noConflict();
+                (function ($) {
+                    window.onload = function () {
+                        $("#tS2").thumbnailScroller({
+                            scrollerType: "clickButtons",
+                            scrollerOrientation: "horizontal",
+                            scrollSpeed: 2,
+                            scrollEasing: "easeOutCirc",
+                            scrollEasingAmount: 600,
+                            acceleration: 4,
+                            scrollSpeed: 800,
+                            noScrollCenterSpace: 10,
+                            autoScrolling: 0,
+                            autoScrollingSpeed: 2000,
+                            autoScrollingEasing: "easeInOutQuad",
+                            autoScrollingDelay: 500
+                        });
+                    }
+                })(jQuery);
+						</script>
+
+
+            <div class="row-fluid">
+                <div class="col-md-12 col-lg-12 titlepanel">
+                    <div class="col-md-10 col-lg-10 col-lg-offset-1">
+                        <div class="col-md-1 col-lg-1">
+                            <img width="100px;" src="../images/logo.png">
+                        </div>
+                        <div class="col-md-3 col-lg-3" style="padding-top: 4px;"><span style="padding-left: 20px; color: #e1e1e1">© Copyright 2014. All Rights Reserved.</span></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2 col-lg-2" id="sidenav" style="height: 100%; position: fixed; right: 0; top: 0; background: #323232; color: #ffffff; display: none; z-index: 1">
+            <div class="sidebar responsive">
+
+                <ul class="nav ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+
+
+                <ul class="nav " style="text-transform: none">
+                    <li><a href="#">Give us Feedback</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Policy</a> </li>
+                </ul>
+
+                <div style="margin-top: 10px;">
+                    <a href="#">Need any help?Write to us at</a><br />
+                    <i class="fa fa-envelope-o">&nbsp;&nbsp;<a href="#" style="color: #ffffff">support@bettertalents.com</a></i>
+
+                </div>
+                <div style="margin-top: 30px;">
+                    <a href="#">Follow us</a><br />
+                    <a href="#"><i class="fa fa-facebook-square">&nbsp;&nbsp;</i></a>
+                    <a href="#"><i class="fa fa-twitter-square">&nbsp;&nbsp;</i></a>
+                    <a href="#"><i class="fa fa-linkedin-square">&nbsp;&nbsp;</i></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.ba-cond.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.slitslider.js"></script>
+        <script type="text/javascript" src="../appcode.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $("#chckSearch").click(function () {
+                    if ($("#ddlSavedSearches").attr("disabled") == "disabled") {
+                        $('#ddlSavedSearches').removeAttr("disabled");
+                        $('.pnlsrch').css("display","none");
+                    }
+                    else {
+                        $('#ddlSavedSearches').attr("disabled", true);
+                        $('.pnlsrch').css("display", "block");
+                    }
+                })
+
+      
+                var scroll_pos = 0;
+                $(document).scroll(function () {
+
+                    scroll_pos = $(this).scrollTop();
+                    if (scroll_pos > 30) {
+                        $(".navbar").css('background-color', '#323232');
+                    }
+                    else {
+                        $(".navbar").css('background-color', 'transparent');
+                    }
+                });
+            });
+            $(function () {
+
+                var Page = (function () {
+
+                    var $nav = $('#nav-dots > span'),
+						slitslider = $('#slider').slitslider({
+						    onBeforeChange: function (slide, pos) {
+
+						        $nav.removeClass('nav-dot-current');
+						        $nav.eq(pos).addClass('nav-dot-current');
+
+						    }
+						}),
+
+						init = function () {
+
+						    initEvents();
+
+						},
+						initEvents = function () {
+
+						    $nav.each(function (i) {
+
+						        $(this).on('click', function (event) {
+
+						            var $dot = $(this);
+
+						            if (!slitslider.isActive()) {
+
+						                $nav.removeClass('nav-dot-current');
+						                $dot.addClass('nav-dot-current');
+
+						            }
+
+						            slitslider.jump(i + 1);
+						            return false;
+
+						        });
+
+						    });
+
+						};
+
+                    return { init: init };
+
+                })();
+
+                Page.init();
+
+                /**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+                /*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+
+            });
+		</script>
+</body>
+</html>

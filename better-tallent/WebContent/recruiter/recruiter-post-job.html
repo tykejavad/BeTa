@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Better Talent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Better Talent" />
+    <meta name="keywords" content="Better Talent" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/circle.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/chosen.css" />
+    <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery.thumbnailScroller.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="../libs/demo-assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .icon {
+            cursor: pointer;
+            padding: 29px 34px;
+            -moz-border-radius: 60px;
+            -webkit-border-radius: 60px;
+            border-radius: 60px;
+            -moz-box-shadow: 0px 0px 2px #888;
+            -webkit-box-shadow: 0px 0px 2px #888;
+            box-shadow: 0px 0px 2px #888;
+            background: #23BA85;
+            color: #ffffff;
+            -webkit-transition-duration: 0.8s;
+            -moz-transition-duration: 0.8s;
+            -o-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+            transition-property: transform;
+            overflow: hidden;
+        }
+
+            .icon:hover {
+                background: #323232;
+                color: #ffffff;
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+            }
+
+            .icon#animate {
+                transition-property: width, border-radius, background-color;
+                transition-duration: 1s, 2s;
+                transition-timing-function: ease;
+            }
+
+        .row {
+            margin-top: 10px;
+        }
+        .row {
+            margin-top: 10px;
+        }
+        .dashboard a {
+        color:#000000;
+        font-size:13px;
+        padding:15px 0px;
+        display:block;
+        }
+        .dashboard a:hover {
+       text-decoration:none;
+       color:#00CC99;
+        }
+        .dashboard i {
+        color:#00BA8B;
+        font-size:18px;
+        }
+    </style>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../libs/demo-assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+<script>tinymce.init({ selector: '.textarea' });</script>
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="../jquery.smartmenus.js"></script>
+    <script type="text/javascript" src="../js/jquery.thumbnailScroller.js"></script>
+
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="../addons/bootstrap/jquery.smartmenus.bootstrap.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="../addons/bootstrap/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link href="../css/menu.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/modernizr.custom.79639.js"></script>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
+    </noscript>
+</head>
+<body>
+
+
+
+    <div class="col-md-12 col-lg-12" id="containerData" style="padding: 0">
+        <!-- Static navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="position: absolute;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.png"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <!-- Right nav -->
+                    <ul class="nav navbar-nav navbar-right">
+                         <!--  <li><a href="bootstrap-navbar.html">Home</a></li>
+              <li><a href="bootstrap-navbar-static-top.html">Jobs</a></li>-->
+              
+             
+              <li><a href="#" style="font-size:14px;">Prasanta Kumar Pradhan</a>
+                <ul class="dropdown-menu">
+                   <li><a href="#">Edit Company Profile</a></li>
+                                    <li><a href="#">Subscription</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                </ul>
+              </li> 
+                        <li ><a href="javascript:void(0)" style="font-size:14px;"><i class="fa fa-comment"></i>&nbsp;&nbsp;<span>My Alerts(5)</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">22-Jun-2015 - You did not answer the queries</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">22-Jun-2015 - You did not answer the queries</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+                             <li><a href="#">25-Jun-2015 - Profile Updated</a></li>
+
+                </ul>
+                        </li>
+                        <!-- <li><a href="bootstrap-navbar-fixed-bottom.html">Contacts</a></li> -->
+                       <!-- <li><a href="bootstrap-navbar-fixed-bottom.html" style="border: 2px solid #23BA85; padding-top: 7px; padding-bottom: 7px">Dashboard</a></li>-->
+                        <li><a href="javacript:void(0)" id="sidemenu" style="font-size: 24px; margin-right: 32px;"><i class="fa fa-align-justify"></i></a></li>
+                    </ul>
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container -->
+        </div>
+        <div style="clear:both"></div>
+        <div class="container demo-2" style="width: 100%; padding: 0">
+
+            <div class="col-md-12 col-lg-12" style="background: url(../images/other_banner.png); background-size: cover; background-repeat: no-repeat; height: 130px">
+            </div>
+            <div class="col-md-12 col-lg-12 menudetails">
+                <div class="col-md-6 col-lg-6 col-lg-offset-2">
+                    <a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;<a href="#">Dashboard</a>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12" style="margin-top: 20px; margin-bottom: 30px;">
+
+                <div class="col-md-11 col-lg-11 col-lg-offset-1" >
+           <div class="col-md-2 col-lg-2" >
+                        <ul class="nav nav-pills nav-stacked leftwidget" style=" padding-top:10px;font-size:13px;font-weight:400">
+                            <li><div style="position:absolute;right:15px"><a href="#" style="color:#e1e1e1;cursor:pointer" ><i class="fa fa-pencil"></i></a></div></li>
+                            <li><center><img src="../images/profile.jpg" width="80px"  class="img-circle" style="border:1px solid #e1e1e1" /></center></li>
+                            <li class="active"><a href="#" style="background-color:#323232">Upgrade to Premium</a></li>
+                            <li>
+                                <div class="col-md-10 col-lg-10 col-lg-offset-2" style="margin-bottom:10px;">
+                                   <div class="row">
+                                        
+                                        <div class="col-md-12 col-lg-12" style="padding-left: 0px; padding-right: 1px;">
+                                           Prasanta , Bhubaneswar
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                             
+                        </ul>
+                    </div>
+
+                     <div class="col-md-10 col-lg-10 dashboard" style="padding-left:0px;padding-right:0px;">
+                         <ul class="nav nav-tabs toptabs">
+                             <li><a href="#"><i class="fa fa-user"> </i>&nbsp;&nbsp;My Profile</a></li>
+                             <li><a href="recruiter-Dashboard.html"><i class="fa fa-send"> </i>&nbsp;&nbsp;Search Candidates</a></li>
+                             <li class="active"><a href="javascript:void(0)"><i class="fa fa-qrcode"> </i>&nbsp;&nbsp;Manage Job Posting</a></li>
+                             <li><a href="#"><i class="fa fa-signal"> </i>&nbsp;&nbsp;My Subscriptions</a></li>
+                             <li><a href="#"><i class="fa fa-share-square-o"> </i>&nbsp;&nbsp;Invite Your Team</a></li>
+                         </ul>
+
+
+                            <ul class="nav nav-tabs subtabs" style="font-family:Tahoma;">
+                             <li class="active"><a href="javascript:void(0)">Post Job</a></li>
+                             <li><a href="#">Assign Jobs</a></li>
+                             <li><a href="Job-Professional-Details.html">Job Posting Reports</a></li>
+                             <li><a href="Job-Educational-Details.html">Questionnaries</a></li>
+                             <li><a href="othe-info.html">Create Referrals</a></li>
+                         </ul>
+
+                         <div class="row">
+
+                             <div class="col-md-12 col-lg-12">
+                                 <label for="inputEmail" class="control-label col-xs-3">Copy From Existing Job</label>
+                                 <div class="col-xs-1" style="padding-left: 0px; padding-top: 5px">
+                                     <input type="checkbox" id="chckSearch" />
+                                 </div>
+                                 <div class="col-xs-7" style="padding-left: 0px; padding-top: 5px">
+                                     <div class="col-xs-4">
+                                         <select class="form-control" id="ddlSavedSearches" disabled="disabled">
+                                             <option>Select</option>
+                                         </select>
+                                     </div>
+                                     <div class="col-xs-6">
+                                         <select class="form-control" id="Select1" disabled="disabled">
+                                             <option>Select</option>
+                                         </select>
+                                     </div>
+                                 </div>
+                                 <span class="mandatory">*</span>
+                             </div>
+                             <div style="clear: both"></div>
+                         </div>
+                         <div class="row">
+
+                             <div class="col-md-12 col-lg-12">
+                                 <!--Job Details-->
+                                 <div class="panel panel-default pnlsrch">
+                                     <div class="panel-heading">Job Details</div>
+                                     <div class="panel-body">
+                                         <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Job Title/Desgination</label>
+                                                 <div class="col-xs-8" style="">
+                                                     <input type="text" placeholder="Job Title" class="form-control" />
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                          <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Job Description</label>
+                                                 <div class="col-xs-8" style="">
+                                                     <textarea placeholder="Job Title" class="form-control textarea"></textarea>
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                         <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Keywords</label>
+                                                 <div class="col-xs-8" style="">
+                                                     <input type="text" placeholder="Separated by Comma(,)" class="form-control" />
+                                                     <label for="inputEmail" class="control-label extradesc">Max 250 Charecters</label>
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                         <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Work Experience</label>
+                                                 <div class="col-xs-8" style="padding-left:0px;padding-right:0px;">
+                                                     <div class="col-xs-6">
+                                                         <select class="form-control" id="Select2">
+                                                             <option>-Minimum-</option>
+                                                         </select>
+                                                     </div>
+                                                        <div class="col-xs-6">
+                                                         <select class="form-control" id="Select3">
+                                                             <option>-Maximum-</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+
+                                          <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Annual CTC</label>
+                                                 <div class="col-xs-8" style="padding-left:0px;padding-right:0px;">
+                                                     <div class="col-xs-3">
+                                                         <select class="form-control" id="Select4">
+                                                             <option>USD</option>
+                                                         </select>
+                                                     </div>
+                                                        <div class="col-xs-4">
+                                                         <select class="form-control" id="Select5">
+                                                             <option>-Minimum-</option>
+                                                         </select> 
+                                                     </div>
+                                                     <div class="col-xs-1"> to </div>
+                                                      <div class="col-xs-4">
+                                                         <select class="form-control" id="Select6">
+                                                             <option>-Maximum-</option>
+                                                         </select>
+                                                     </div>
+                                                     <label for="inputEmail" style="padding-left:15px;" class="control-label extradesc">Specify correct salary to get the most relevant responses</label>
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                         
+                                          <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">&nbsp;</label>
+                                                 <div class="col-xs-8" style="padding-right:0px;">
+                                                     <input type="checkbox" /> <label for="inputEmail" class="control-label">Hide Salary From Job Seeker</label>
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+
+                                          <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Other Salary Details</label>
+                                                 <div class="col-xs-8" style="">
+                                                     <input type="text" placeholder="Salary Details" class="form-control" />
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                         <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">No Of Vacancy</label>
+                                                 <div class="col-xs-8" style="">
+                                                     <input type="text" placeholder="Vacancy" class="form-control" />
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                          <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Location(s) of Job</label>
+                                                 <div class="col-xs-8" style="">
+                                                     <select class="form-control"></select>
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                         <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Industry</label>
+                                                 <div class="col-xs-8" style="">
+                                                        <select class="form-control"></select><br />
+                                                     <input type="text" placeholder="Others" class="form-control" />
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                          <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Functional Area</label>
+                                                 <div class="col-xs-8" style="">
+                                                        <select class="form-control"></select><br />
+                                                     <input type="text" placeholder="Others" class="form-control" />
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                         <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Job Role</label>
+                                                 <div class="col-xs-8" style="">
+                                                        <select class="form-control"></select>
+                                                 </div>
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div style="clear: both"></div>
+                                 <div class="panel panel-default pnlsrch">
+                                     <div class="panel-heading">Deired Candidate Profile</div>
+                                     <div class="panel-body">
+                                         <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Specify UG Qualification</label>
+                                                 <div class="col-xs-8" style="">
+                                                     <select id="selectError1" class="form-control" style="height: 40px;" multiple data-rel="chosen">
+                                                         <option>Btech</option>
+                                                         <option selected>M-tech</option>
+                                                         <option>Option 3</option>
+                                                         <option>Option 4</option>
+                                                         <option>Option 5</option>
+                                                     </select>
+                                                     <div class="col-xs-12" style="padding-left:0;">
+                                                         <div class="col-xs-1">
+                                                         <input type="checkbox" />
+                                                         </div>
+                                                         <div class="col-xs-10">
+                                                         Need Candidates from Specific Institute Only
+                                                           </div>
+                                                     </div>
+                                                     <div class="col-xs-12" style="padding-left:0;">
+                                                         <table class="table  table table-responsive table-bordered">
+                                                             <thead  class="tableheader">
+                                                                 <tr>
+                                                                    <td>Institute Name</td> 
+                                                                    <td>Action</td> 
+                                                                 </tr>
+                                                             </thead>
+                                                             <tbody>
+                                                                  <tr>
+                                                                    <td><select class="form-control"></select></td> 
+                                                                    <td><button type="submit" class="btn btn-primary btn-xs">Add more</button></td> 
+                                                                 </tr>
+                                                                 <tr>
+                                                                    <td>IIT</td> 
+                                                                    <td><button type="submit" class="btn btn-danger btn-xs">Remove</button></td> 
+                                                                 </tr>
+                                                             </tbody>
+                                                         </table>
+                                                     </div>
+                                                 </div>
+                                               
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+
+                                         <div class="row">
+                                             <div class="col-md-12 col-lg-12">
+                                                 <label for="inputEmail" class="control-label col-xs-3">Specify PG Qualification</label>
+                                                 <div class="col-xs-8" style="">
+                                                     <select id="select7" class="form-control" style="height: 40px;" multiple data-rel="chosen">
+                                                         <option>Btech</option>
+                                                         <option selected>M-tech</option>
+                                                         <option>Option 3</option>
+                                                         <option>Option 4</option>
+                                                         <option>Option 5</option>
+                                                     </select>
+                                                     <div class="col-xs-12" style="padding-left:0;">
+                                                         <div class="col-xs-1">
+                                                         <input type="checkbox" />
+                                                         </div>
+                                                         <div class="col-xs-10">
+                                                         Need Candidates from Specific Institute Only
+                                                           </div>
+                                                     </div>
+                                                     <div class="col-xs-12" style="padding-left:0;">
+                                                         <table class="table  table table-responsive table-bordered">
+                                                             <thead  class="tableheader">
+                                                                 <tr>
+                                                                    <td>Institute Name</td> 
+                                                                    <td>Action</td> 
+                                                                 </tr>
+                                                             </thead>
+                                                             <tbody>
+                                                                  <tr>
+                                                                    <td><select class="form-control"></select></td> 
+                                                                    <td><button type="submit" class="btn btn-primary btn-xs">Add more</button></td> 
+                                                                 </tr>
+                                                                 <tr>
+                                                                    <td>IIT</td> 
+                                                                    <td><button type="submit" class="btn btn-danger btn-xs">Remove</button></td> 
+                                                                 </tr>
+                                                             </tbody>
+                                                         </table>
+                                                     </div>
+                                                 </div>
+                                               
+                                                 <span class="mandatory">*</span>
+                                             </div>
+
+                                         </div>
+                                        
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                          <div class="row">
+                                             <label for="inputEmail" class="control-label col-xs-3"></label>
+                                             <div class="col-xs-8">
+                                                 <button type="submit" class="btn btn-success btn-md">Preview & Post Job</button>&nbsp;&nbsp;
+               
+                            <button type="submit" class="btn btn-primary btn-md">Save & Post Later</button>
+                                             </div>
+                                         </div>
+                     </div>
+
+
+                </div>
+
+                <style>
+                    .ace {
+                    padding:7px 10px !important;
+                    border:1px solid #EDEDED ;
+                    font-family:'Segoe UI';
+                    font-weight:400;
+                    font-size:12px !important;
+                    border-radius:3px;
+                    }
+                        .ace i {
+                        color:#0076BA;
+                        }
+                    .jobsrchdetail{
+                       border-bottom:1px solid #e1e1e1;
+                    }
+                    .jobsrchdetail label {
+                    font-size:12px !important;
+                    }
+                     .link {
+                         padding:7px 10px !important;
+                    font-family:'Segoe UI';
+                    font-weight:600;
+                    font-size:13px !important;
+                    border-radius:3px;
+                    color:#0076BA !important;
+                    }
+                </style>
+
+                <div style="clear: both"></div>
+
+            </div>
+
+                <!--<div class="col-md-3 col-lg-3">
+			<div class="panel panel-default">
+			   <div class="panel-heading">Why become a member of Better Talent?</div>
+				<div class="panel-body">
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</div>
+				</div>
+			
+			</div>-->
+            </div>
+
+
+            <div class="row-fluid">
+                <div class="col-md-12 col-lg-12 titlepanel" style="background: #4D4D4D">
+                    <div class="col-md-10 col-lg-10 col-lg-offset-2 footer">
+                        <div class="col-md-3 col-lg-3">
+                            <h4>Know More</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <h4>Checkout here</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-lg-3">
+                            <h4>Get in touch</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2">
+                            <h4>Follow Us</h4>
+                            <a href="#"><i class="fa fa-facebook-square fa-2x">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fa fa-twitter-square fa-2x">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fa fa-linkedin-square fa-2x">&nbsp;&nbsp;</i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <script>
+                jQuery.noConflict();
+                (function ($) {
+                    window.onload = function () {
+                        $("#tS2").thumbnailScroller({
+                            scrollerType: "clickButtons",
+                            scrollerOrientation: "horizontal",
+                            scrollSpeed: 2,
+                            scrollEasing: "easeOutCirc",
+                            scrollEasingAmount: 600,
+                            acceleration: 4,
+                            scrollSpeed: 800,
+                            noScrollCenterSpace: 10,
+                            autoScrolling: 0,
+                            autoScrollingSpeed: 2000,
+                            autoScrollingEasing: "easeInOutQuad",
+                            autoScrollingDelay: 500
+                        });
+                    }
+                })(jQuery);
+						</script>
+
+
+            <div class="row-fluid">
+                <div class="col-md-12 col-lg-12 titlepanel">
+                    <div class="col-md-10 col-lg-10 col-lg-offset-1">
+                        <div class="col-md-1 col-lg-1">
+                            <img width="100px;" src="../images/logo.png">
+                        </div>
+                        <div class="col-md-3 col-lg-3" style="padding-top: 4px;"><span style="padding-left: 20px; color: #e1e1e1">© Copyright 2014. All Rights Reserved.</span></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-2 col-lg-2" id="sidenav" style="height: 100%; position: fixed; right: 0; top: 0; background: #323232; color: #ffffff; display: none; z-index: 1">
+            <div class="sidebar responsive">
+
+                <ul class="nav ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+
+
+                <ul class="nav " style="text-transform: none">
+                    <li><a href="#">Give us Feedback</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Policy</a> </li>
+                </ul>
+
+                <div style="margin-top: 10px;">
+                    <a href="#">Need any help?Write to us at</a><br />
+                    <i class="fa fa-envelope-o">&nbsp;&nbsp;<a href="#" style="color: #ffffff">support@bettertalents.com</a></i>
+
+                </div>
+                <div style="margin-top: 30px;">
+                    <a href="#">Follow us</a><br />
+                    <a href="#"><i class="fa fa-facebook-square">&nbsp;&nbsp;</i></a>
+                    <a href="#"><i class="fa fa-twitter-square">&nbsp;&nbsp;</i></a>
+                    <a href="#"><i class="fa fa-linkedin-square">&nbsp;&nbsp;</i></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.ba-cond.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.slitslider.js"></script>
+        <script type="text/javascript" src="../appcode.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $("#chckSearch").click(function () {
+                    if ($("#ddlSavedSearches").attr("disabled") == "disabled") {
+                        $('#ddlSavedSearches').removeAttr("disabled");
+                        $('.pnlsrch').css("display","none");
+                    }
+                    else {
+                        $('#ddlSavedSearches').attr("disabled", true);
+                        $('.pnlsrch').css("display", "block");
+                    }
+                })
+
+      
+                var scroll_pos = 0;
+                $(document).scroll(function () {
+
+                    scroll_pos = $(this).scrollTop();
+                    if (scroll_pos > 30) {
+                        $(".navbar").css('background-color', '#323232');
+                    }
+                    else {
+                        $(".navbar").css('background-color', 'transparent');
+                    }
+                });
+            });
+            $(function () {
+
+                var Page = (function () {
+
+                    var $nav = $('#nav-dots > span'),
+						slitslider = $('#slider').slitslider({
+						    onBeforeChange: function (slide, pos) {
+
+						        $nav.removeClass('nav-dot-current');
+						        $nav.eq(pos).addClass('nav-dot-current');
+
+						    }
+						}),
+
+						init = function () {
+
+						    initEvents();
+
+						},
+						initEvents = function () {
+
+						    $nav.each(function (i) {
+
+						        $(this).on('click', function (event) {
+
+						            var $dot = $(this);
+
+						            if (!slitslider.isActive()) {
+
+						                $nav.removeClass('nav-dot-current');
+						                $dot.addClass('nav-dot-current');
+
+						            }
+
+						            slitslider.jump(i + 1);
+						            return false;
+
+						        });
+
+						    });
+
+						};
+
+                    return { init: init };
+
+                })();
+
+                Page.init();
+
+                /**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+                /*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+
+            });
+		</script>
+
+        <!-- start: JavaScript-->
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-migrate-1.0.0.min.js"></script>
+	
+		<script src="js/jquery-ui-1.10.0.custom.min.js"></script>
+	
+		<script src="js/jquery.ui.touch-punch.js"></script>
+	
+		<script src="js/modernizr.js"></script>
+	
+		<script src="js/bootstrap.min.js"></script>
+	
+		<script src="js/jquery.cookie.js"></script>
+	
+		<script src='js/fullcalendar.min.js'></script>
+	
+		<script src='js/jquery.dataTables.min.js'></script>
+
+		<script src="js/excanvas.js"></script>
+	<script src="js/jquery.flot.js"></script>
+	<script src="js/jquery.flot.pie.js"></script>
+	<script src="js/jquery.flot.stack.js"></script>
+	<script src="js/jquery.flot.resize.min.js"></script>
+	
+		<script src="js/jquery.chosen.min.js"></script>
+	
+		<script src="js/jquery.uniform.min.js"></script>
+		
+		<script src="js/jquery.cleditor.min.js"></script>
+	
+		<script src="js/jquery.noty.js"></script>
+	
+		<script src="js/jquery.elfinder.min.js"></script>
+	
+		<script src="js/jquery.raty.min.js"></script>
+	
+		<script src="js/jquery.iphone.toggle.js"></script>
+	
+		<script src="js/jquery.uploadify-3.1.min.js"></script>
+	
+		<script src="js/jquery.gritter.min.js"></script>
+	
+		<script src="js/jquery.imagesloaded.js"></script>
+	
+		<script src="js/jquery.masonry.min.js"></script>
+	
+		<script src="js/jquery.knob.modified.js"></script>
+	
+		<script src="js/jquery.sparkline.min.js"></script>
+	
+		<script src="js/counter.js"></script>
+	
+		<script src="js/retina.js"></script>
+
+		<script src="js/custom.js"></script>
+	<!-- end: JavaScript-->
+	
+
+</body>
+</html>

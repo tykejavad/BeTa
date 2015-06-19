@@ -1,0 +1,346 @@
+.form-control {
+font-size:12px !important;
+}
+.overseas {
+display:none;
+}
+.leftwidget {
+background: rgb(37,141,200); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(37,141,200,1) 0%, rgba(37,141,200,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(37,141,200,1)), color-stop(100%,rgba(37,141,200,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(37,141,200,1) 0%,rgba(37,141,200,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+background-image:url("../images/left_tab.jpg");
+background-repeat:repeat;
+color:#FFFFFF;
+}
+.extradesc {
+color:#5D5959;
+}
+.tableheader {
+background: rgba(21, 148, 200, 0.19); font-weight: 600; font-size: 13px;
+}
+
+.subtabs > li.active > a, .subtabs > li.active > a:hover, .subtabs > li.active > a:focus {
+background: #00BA8B !important;
+  color: #ffffff !important;
+}
+.subtabs > li > a {
+    border: 1px solid rgba(209, 208, 208, 0.73) !important;
+    background: #e1e1e1;
+}
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none !important;
+}
+.toptabs > li > a {
+background:#307BBB;
+color:#ffffff;
+font-family:Tahoma;
+font-size:12px !important;
+}
+.nav-tabs > li > a :hover{
+background:#ffffff !important;
+}
+.href {
+color:#ffffff;
+text-decoration:none;
+}
+.href:hover {
+text-decoration:none;
+color:rgba(209, 208, 208, 0.73);
+}
+.mandatory {
+color:rgba(224, 18, 18, 0.73);
+}
+.control-label {
+font-weight:normal;
+font-size:13px;
+}
+.menudetails {
+color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  padding :10px 0px;
+}
+    .menudetails a {
+    color:#23BA85;
+    font-family:Tahoma;
+    font-size:13px;
+    }
+    .menudetails a:hover{
+    color:#23BA85;
+    text-decoration:none;
+    }
+.footer {
+
+}
+    .footer a {
+    text-decoration:none;
+    color:rgba(209, 208, 208, 0.73);
+    }
+    .footer h1 {
+    color:rgba(209, 208, 208, 0.73) !important;
+    }
+    .footer ul {
+    padding:0;
+    margin:0;
+      padding-left: 17px;
+    }
+        .footer ul li {
+        list-style:square;
+        }
+            .footer ul li a {
+            text-decoration:none;
+            }
+            .footer ul li a:hover {
+            color:#ffffff;
+            }
+#sidenav, #sidenav a{
+font-family:din, Calibri, Cantarell, sans-serif;
+font-size:15px;
+ color:rgba(209, 208, 208, 0.73);
+ text-decoration:none;
+ font-weight:bold;
+}
+    #sidenav ul {
+    text-transform:uppercase;
+    }
+    #sidenav ul li {
+    padding:9px 0px;
+    }
+     #sidenav ul li a{
+    padding:5px 0px;
+    color:rgba(209, 208, 208, 0.73);
+    font-weight:bold;
+    }
+        #sidenav ul li a:hover {
+        background:none;
+        color:#ffffff;
+        }
+body
+{
+background:#FFFFFF!important;
+font-family:Segoe UI !important;
+font-weight:400;
+}
+.sl-slider-wrapper {
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.form-group
+{
+padding-top:30px;
+}
+.control-label
+{
+padding-top:6px;
+}
+.calltoaction
+{
+background:#23BA85;
+padding:10px 45px;
+text-decoration:none;
+color:#ffffff;
+font-size:14px;
+border-radius:0px !important;
+}
+.spnaright
+{
+border-right:2px solid rgba(156, 148, 148, 0.06);
+}
+.spnaright a{
+text-decoration:none;
+color:#000000;
+font-size:20px;
+padding-bottom:10px;
+font-family:Segoe UI;
+}
+.spnaright a:hover
+{
+color:#00BA8B;
+text-decoration:none;
+}
+.logfoot
+{
+color:#ffffff;
+padding:10px 60px;
+margin-top:20px;
+border:2px solid #ffffff;
+text-decoration:none;
+}
+.logfoot:hover
+{
+color:#323232;
+background:#ffffff;
+text-decoration:none;
+}
+.gradient
+{
+padding-bottom:30px;
+padding-top:30px;
+border-bottom:2px solid #23BA85;
+background: rgb(0,186,127); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYmE3ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxOWJkOTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(0,186,127,1) 0%, rgba(25,189,145,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,186,127,1)), color-stop(100%,rgba(25,189,145,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,186,127,1) 0%,rgba(25,189,145,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,186,127,1) 0%,rgba(25,189,145,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,186,127,1) 0%,rgba(25,189,145,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,186,127,1) 0%,rgba(25,189,145,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ba7f', endColorstr='#19bd91',GradientType=0 ); /* IE6-8 */
+
+}
+.spnaleft
+{
+border-right:2px solid rgba(0, 0, 0, 0.06);
+}
+.spnaleft a{
+text-decoration:none;
+color:#FFFFFF;
+font-size:20px;
+padding-top:10px;
+font-family:Segoe UI;
+}
+.spnaleft a:hover
+{
+color:#00BA8B;
+text-decoration:none;
+}
+.row-fluid
+{
+font-family:Tahoma;
+font-size:13px;
+line-height:23px;
+}
+.leftconatin
+{
+padding-top: 16px;
+  padding-left: 1px!important;
+}
+.titlepanel
+{
+background:#323232;
+color:#ffffff;
+padding-bottom:30px;
+padding-top:30px;
+border-bottom:2px solid #23BA85;
+}
+.calltoaction:hover
+{
+background:#323232;
+text-decoration:none;
+color:#ffffff!important;
+}
+.sl-slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Slide wrapper and slides */
+
+.sl-slide,
+.sl-slides-wrapper,
+.sl-slide-inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+} 
+
+.sl-slide {
+	z-index: 1;
+}
+
+/* The duplicate parts/slices */
+
+.sl-content-slice {
+	overflow: hidden;
+	position: absolute;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	background: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	opacity : 1;
+}
+
+/* Horizontal slice */
+
+.sl-slide-horizontal .sl-content-slice {
+	width: 100%;
+	height: 50%;
+	left: -200px;
+	-webkit-transform: translateY(0%) scale(1);
+	-moz-transform: translateY(0%) scale(1);
+	-o-transform: translateY(0%) scale(1);
+	-ms-transform: translateY(0%) scale(1);
+	transform: translateY(0%) scale(1);
+}
+
+.sl-slide-horizontal .sl-content-slice:first-child {
+	top: -200px;
+	padding: 200px 200px 0px 200px;
+}
+
+.sl-slide-horizontal .sl-content-slice:nth-child(2) {
+	top: 50%;
+	padding: 0px 200px 200px 200px;
+}
+
+/* Vertical slice */
+
+.sl-slide-vertical .sl-content-slice {
+	width: 50%;
+	height: 100%;
+	top: -200px;
+	-webkit-transform: translateX(0%) scale(1);
+	-moz-transform: translateX(0%) scale(1);
+	-o-transform: translateX(0%) scale(1);
+	-ms-transform: translateX(0%) scale(1);
+	transform: translateX(0%) scale(1);
+}
+
+.sl-slide-vertical .sl-content-slice:first-child {
+	left: -200px;
+	padding: 200px 0px 200px 200px;
+}
+
+.sl-slide-vertical .sl-content-slice:nth-child(2) {
+	left: 50%;
+	padding: 200px 200px 200px 0px;
+}
+
+/* Content wrapper */
+/* Width and height is set dynamically */
+.sl-content-wrapper {
+	position: absolute;
+}
+
+.sl-content {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+/* Default styles for background colors */
+.sl-slide-horizontal .sl-slide-inner {
+	background: #ddd;
+}
+
+.sl-slide-vertical .sl-slide-inner {
+	background: #ccc;
+}
+
